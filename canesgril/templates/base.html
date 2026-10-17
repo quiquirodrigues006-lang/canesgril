@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>Canes Grill | {% block title %}churrasco bom até demais{% endblock %}</title>
+    <title>Canes Grill | {% block title %}Bem-vindo{% endblock %}</title>
 
     <!-- Favicon e Stylesheet -->
     <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
@@ -16,16 +16,15 @@
 </head>
 
 <body>
-    <!-- Injeção do header -->
+    <!-- Injeção do Cabeçalho (Preloader, Busca e Menu) -->
     {% include 'partials/_header.html' %}
+
+    <!-- Onde o conteúdo das páginas filhas será injetado -->
     {% block content %}
-    
-
-
     {% endblock %}
-    <!-- Injeção do header -->
-    {% include 'partials/_footer.html' %}
 
+    <!-- Injeção do Rodapé -->
+    {% include 'partials/_footer.html' %}
 
     <!-- ##### All Javascript Files ##### -->
     <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
